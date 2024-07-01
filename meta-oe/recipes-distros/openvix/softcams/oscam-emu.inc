@@ -13,12 +13,12 @@ EXTRA_OECMAKE += "\
 
 require oscam-common.inc
 
-inherit gitpkgv
+inherit gittag allarch
 
 SRCREV = "${AUTOREV}"
 
-PV = "1.30+git"
-PKGV = "1.30+git${GITPKGV}"
+PV = "git${SRCPV}"
+PKGV = "git${GITPKGVTAG}"
 PR = "r2"
 
 S = "${WORKDIR}/git"
